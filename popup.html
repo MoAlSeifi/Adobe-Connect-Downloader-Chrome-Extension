@@ -3,14 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WHC Downloader</title>
+        <title>Adobe Connect Downloader</title>
         <script src="popup.js" defer></script>
         <link rel="stylesheet" href="styles.css">
         <style>
+            h3 {
+                color: rgb(75, 75, 75);
+            }
             body { 
                 width: 100px; 
                 text-align: center;
-                /* body background changed to a beautiful gradient between green and white */ 
+                background-color: #e7f0ed;
             }
             button { 
                 padding: 10px; 
@@ -20,12 +23,14 @@
                 cursor: pointer; 
                 border-radius: 5px;
                 width: 100%;
+                font-family: 'Vazirmatn_Bold', sans-serif;
+                font-size: 1rem;
             }
             button:hover { background: #076545; }
         </style>
     </head>
     <body>
-        <h3>Adobe Connect Downloader</h3>
-        <button id="downloadBtn">بارگیری جلسه</button>
+        <h3 id="popup-title">Adobe Connect Downloader</h1>
+        <button id="download-btn">Download</button>
     </body>
 </html>

@@ -7,27 +7,70 @@
         <script src="options.js" defer></script>
         <link rel="stylesheet" href="styles.css">
         <style>
-            label { display: block; margin-top: 10px; }
-            input { width: 100%; padding: 5px; margin-top: 5px; }
+            h1 {
+                text-align: center;
+                margin-top: 20px;
+            }
+            label {
+                 display: block;
+                 margin-top: 10px;
+                }
+            input {
+                width: 392px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                padding: 2px;
+                margin-top: 5px;
+                direction: ltr;
+                border-radius: 5px;
+            }
+
             button { 
+                display: block;
                 margin-top: 15px; 
                 padding: 10px; 
-                background: #007bff; 
+                background: #064c34; 
                 color: white; 
                 border: none; 
-                cursor: pointer; 
+                cursor: pointer;
+                border-radius: 10px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 400px;;
             }
-            button:hover { background: #0056b3; }
+            button:hover { background: #076545; }
+            div {
+                background-color: #e7f0ed;
+                width: 400px;
+                margin: 0 auto;
+                border: 2px dashed #3d997a;
+                border-radius: 5%;
+                padding: 20px;
+            }
         </style>
     </head>
     <body>
-        <h2>Extension Options</h2>
-        <label for="baseUrl">Base URL to Check:</label>
-        <input type="text" id="baseUrl" placeholder="e.g., https://ac.whc.ir/" />
+        <!-- create a div anc center it and make its width 50% -->
+        <div>
+            <h1 id="options-title">Extension Options</h1>
 
-        <label for="payloadParams">Payload Parameters (comma-separated):</label>
-        <input type="text" id="payloadParams" placeholder="e.g., recording-passcode" />
+            <!-- Base URL Input -->
+            <label for="base-url" id="base-url-label" >Base URL:</label>
+            <input type="text" id="base-url" placeholder="e.g., https://sub.example.ir/">
 
-        <button id="saveBtn">Save</button>
+            <!-- Parameter Input -->
+            <label for="payloads" id="payloads-label">Payloads to Keep:</label>
+            <input type="text" id="payloads" placeholder="e.g., recording-passcode">
+
+            <!-- Language Selection Dropdown -->
+            <label for="language" id="language-label">Language:</label>
+            <select id="language">
+                <option value="en">English</option>
+                <option value="fa">فارسی</option>
+            </select>
+
+            <button id="save-btn">Save</button>
+        </div>
     </body>
 </html>

@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Adobe Connect URL Downloader",
-  "version": "1",
+  "version": "1.1",
   "description": "Download recordings from Adobe Connect.",
   "permissions": ["activeTab", "downloads", "storage", "scripting"],
   "host_permissions": ["<all_urls>"],

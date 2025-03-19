@@ -7,13 +7,18 @@
 }
 
 @font-face {
-    font-family: 'Vazirmatn';
+    font-family: 'Vazirmatn_Bold';
     src: url('fonts/Vazirmatn-Bold.woff2') format('woff2'),
          url('fonts/Vazirmatn-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
-/* body and button all use bellow font */
-body, button {
+/* every element in the page will use the Vazirmatn font */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, dl, dt, dd, table, th, td, input, textarea, select, button {
     font-family: 'Vazirmatn', sans-serif;
+}
+/* label elements use vazirmatn bold */
+label {
+    font-family: 'Vazirmatn_Bold', sans-serif;
+    font-size: 1rem;
 }
